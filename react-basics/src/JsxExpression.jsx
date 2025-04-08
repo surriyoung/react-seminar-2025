@@ -1,9 +1,12 @@
+import { useState } from "react";
+
 function BasicExpressions() {
-  const name = "John";
+  const [name, setName] = useState("Josadsadasd");
   const age = 25;
   const isAdmin = true;
   return (
     <div>
+      <input value={name} onChange={(e) => setName(e.target.value)} />
       <p>Name : {name}</p>
       <p>Age next year : {age + 1}</p>
       <p>{name + "'s Profile"}</p>

@@ -9,6 +9,7 @@ function Hello() {
   return (
     <div>
       <h1>Hello</h1>
+      <h1>{process.env.REACT_APP_laksdjlkasjd}</h1>
       <h2>Hi</h2>
     </div>
   );
@@ -17,13 +18,13 @@ function Hello() {
 function App() {
   return (
     <>
-      {/* <h3>컴포넌트</h3>
-      <Hello /> */}
-
-      {/* <h3>컴포넌트 파일 분리</h3>
+      <h3>컴포넌트</h3>
+      <Hello />
+      {/* 
+      <h3>컴포넌트 파일 분리</h3>
       <Child /> */}
-
-      {/* <h3>컴포넌트 작성법</h3>
+      {/* 
+      <h3>컴포넌트 작성법</h3>
       <ClassComp />
       <FunctionComp />
       <ArrowFunctionComp /> */}

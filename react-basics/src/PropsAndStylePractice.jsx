@@ -31,12 +31,12 @@ const styleB = {
   textDecoration: "underline",
 };
 
-const isPrimary = true;
+const isPrimary = false;
 
 function PropsAndStylePractice() {
   return (
     <>
-      <h4>JSX 속성</h4>
+      {/* <h4>JSX 속성</h4>
       <label
         htmlFor="username" //for
       >
@@ -56,12 +56,12 @@ function PropsAndStylePractice() {
         //따라서 자바스크립트 표현식 모두 사용 가능함
         disabled={disableInput}
         placeholder={disableInput ? "(DISABLED)" : "Enter your name"}
-      />
+      /> */}
 
       {/* <h4>이미지 'src' 속성</h4>
       <img src={kittyImg} alt={kittyImgAlt} width={256} height={228} /> */}
 
-      {/* <h4>CSS 스타일 적용하기</h4>
+      <h4>CSS 스타일 적용하기</h4>
       <span style={{ fontWeight: "bold", color: "pink" }}>
         1. 인라인 스타일링
       </span>
@@ -79,7 +79,7 @@ function PropsAndStylePractice() {
         <span style={{ fontSize: isPrimary ? "1.5rem" : "1rem" }}>
           4. 동적으로 스타일링 적용하기
         </span>
-      </div> */}
+      </div>
     </>
   );
 }

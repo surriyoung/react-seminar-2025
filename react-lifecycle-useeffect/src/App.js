@@ -4,6 +4,8 @@ import FuncComp from './FuncComp'
 import { useState } from 'react'
 
 const App = () => {
+
+  //예제1
   const [selected, setSelected] = useState('')
 
   return (

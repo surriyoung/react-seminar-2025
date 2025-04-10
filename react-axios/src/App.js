@@ -4,7 +4,6 @@ import UserList from "./components/UserList";
 function App() {
   return (
     <div className="App">
-      <h4>React Axios 예제</h4>
       <UserList />
     </div>
   );

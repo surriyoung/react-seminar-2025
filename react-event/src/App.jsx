@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      {/* <h4>이벤트 핸들링</h4>
+      <h4>이벤트 핸들링</h4>
       <button
         onClick={handleClick}
         // onClick — HTML에서는 'onclick'이지만,React에서는 camelCase로 'onClick' 사용함
@@ -25,12 +25,12 @@ function App() {
         // 직접 함수를 작성해서 전달하는 방식 (익명 함수)
       >
         Button 2
-      </button> */}
+      </button>
 
       <h4>이벤트 객체</h4>
-      <Button name={"Home"} />
+      {/* <Button name={"Home"} />
       <Button name={"Store"} />
-      <Button name={"Contact"} />
+      <Button name={"Contact"} /> */}
 
       {/* <h4>키보드 관련 이벤트</h4>
       <input

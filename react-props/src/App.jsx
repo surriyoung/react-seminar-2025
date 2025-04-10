@@ -4,7 +4,7 @@ import InfoCard from "./InfoCard";
 import ProductCard from "./ProductCard";
 import CardLayout from "./CardLayout";
 
-// 1. props로 값 전달하기
+// 1️⃣ props로 개별 값 전달하기
 function App() {
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
   );
 }
 
-// 2. 객체를 스프레드 연산자를 사용해 자식 컴포넌트에 props로 전달하기
+// 2️⃣ 객체를 스프레드 연산자를 사용해 props로 전달하기
 // <InfoCard {...cardData1} />는 <InfoCard title="..." content="..." author="..." />와 동일
 // const cardData1 = {
 //   title: "Props in React",
@@ -47,9 +47,7 @@ function App() {
 //   );
 // }
 
-// 3. 배열 데이터를 map()으로 순회하며 각 요소를 props로 전달
-// 배열 데이터를 컴포넌트로 반복 렌더링하기
-// 배열으로 여러 컴포넌트를 만들고 싶을 때는 map() 메서드를 사용해 반복 렌더링을 할 수 있다.
+// 3️⃣ 배열 데이터를 map()으로 순회하며 컴포넌트를 반복 렌더링하기
 // const cards = [
 //   {
 //     idx: 1,
@@ -71,14 +69,14 @@ function App() {
 //         // map(): 배열을 순회하며 컴포넌트를 반복 렌더링
 //         <InfoCard
 //           key={cardData.idx} // key: React가 각 컴포넌트를 구분할 수 있도록 고유한 값을 지정해야 함
-//           {...cardData} // props: cardData 객체의 속성들을 InfoCard의 props로 전달 (스프레드 연산자 사용)
+//           {...cardData} // props: 스프레드 연산자로 cardData 객체의 속성들을 InfoCard의 props로 전달
 //         />
 //       ))}
 //     </>
 //   );
 // }
 
-// 4. 함수를 props로 전달하기
+// 4️⃣ 함수를 props로 전달하기
 // 컴포넌트에 함수를 props로 전달하면, 자식 컴포넌트 내부에서 그 함수를 실행하여 동작을 커스터마이징할 수 있다.
 // const App = () => {
 //   const product = {
@@ -89,7 +87,7 @@ function App() {
 //   return <ProductCard {...product} formatPrice={(p) => `$${p.toFixed(2)}`} />;
 // };
 
-// 5. children
+// 5️⃣ children으로 요소 전달하기
 // children은 컴포넌트의 여는 태그(<>)와 닫는 태그(</>) 사이에 위치한 내용을 의미함
 // 부모 컴포넌트에서 전달한 children은 자식 컴포넌트 내부에서 props.children으로 접근 가능함
 // const App = () => (

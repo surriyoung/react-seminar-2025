@@ -1,26 +1,25 @@
-import './App.css'
-import ClassComp from './ClassComp'
-import FuncComp from './FuncComp'
-import { useState } from 'react'
+import "./App.css";
+import FuncComp from "./FuncComp";
+import { useState } from "react";
 
 const App = () => {
-
-  //예제1
-  const [selected, setSelected] = useState('')
+  const [selected, setSelected] = useState("");
 
   return (
     <>
-      {['', 'ClassComp', 'FuncComp'].map((option) => (
+      {["", "FuncComp"].map((option) => (
         <label key={option}>
           <input
-            type="radio" value={option}
+            type="radio"
+            value={option}
             checked={selected === option}
-            onChange={(e) => setSelected(e.target.value)}/>
-          {option || 'None'}
+            onChange={(e) => setSelected(e.target.value)}
+          />
+          {option || "None"}
         </label>
       ))}
-      {selected && (selected === 'ClassComp' ? <ClassComp /> : <FuncComp />)}
+      {selected === "FuncComp" && <FuncComp />}
     </>
-  )
-}
-export default App
+  );
+};
+export default App;

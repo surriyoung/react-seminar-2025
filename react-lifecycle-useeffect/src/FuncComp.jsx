@@ -31,7 +31,7 @@ const FuncComp = () => {
   // 💡 이 useEffect는 count 값이 변경될 때만 실행됨
 
   const handleIncrement = () => {
-    setCount((prevCount) => prevCount + 1);
+    setCount(count + 1);
     // ✅prevCount는 현재 상태값(count)의 이전 값
     // count는 상태값이고, prevCount는 그 현재 값(count) 을 인자로 전달받아,
     // 그 값을 기반으로 새로운 값을 계산한 다음 업데이트하는 방식

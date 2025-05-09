@@ -4,10 +4,10 @@ import { ModalWrapper } from "./Modal.style";
 
 export default function Modal() {
   const isShow = useSelector((state) => state.modal.isShow);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // 📮Dispatch 준비: dispatch 함수로 액션 전송 가능
 
   const closeModal = () => {
-    dispatch({ type: CLOSE_MODAL });
+    dispatch({ type: CLOSE_MODAL }); // 📮Dispatch 실행
   };
 
   if (!isShow) return null;

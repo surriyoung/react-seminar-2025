@@ -2,11 +2,11 @@ import { useDispatch } from "react-redux";
 import { OPEN_MODAL } from "../reducer/modal";
 
 export default function OpenModalButton() {
-  // 마법을 쓰려면 지팡이가 필요한데 dispatch가 지팡이임
-  const dispatch = useDispatch();
+  // dispatch: 액션을 리듀서에게 전달하는 함수 (마법 지팡이 역할)
+  const dispatch = useDispatch(); // 📮Dispatch 사용준비
 
   const openModal = () => {
-    dispatch({ type: OPEN_MODAL });
+    dispatch({ type: OPEN_MODAL }); // ⚡Action을 Dispatch, 📮Dispatch실행
   };
   return <button onClick={openModal}>모달 열기</button>;
 }
